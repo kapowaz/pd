@@ -13,6 +13,8 @@ fleets.each do |fleet|
 
   order = fleet.orders.first
 
+  next if order.destination_star.player_id != ENV['PLAYER_ID']
+
   attack = NP::Attack.new(
     player: fleet.player,
     fleet: fleet,
