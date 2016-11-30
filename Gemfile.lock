@@ -1,0 +1,15 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    prowl (0.1.4)
+    redis (3.3.0)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  prowl
+  redis
+
+BUNDLED WITH
+   1.12.4
