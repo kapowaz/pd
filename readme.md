@@ -1,15 +1,16 @@
 # Neptunes Pride Pager Duty
 
-Uses [Prowl](https://www.prowlapp.com/) to send push notifications to your iOS
-device.
+Ruby app that uses [Prowl](https://www.prowlapp.com/) to send push
+notifications to your iOS device alerting you of [Neptunes
+Pride](https://np.ironhelmet.com/) attacks.
 
 ### Required ENV Vars
 
-`PROWL_KEY` - Prowl app API key (paid for iOS app)
-`REDIS_URL` - Redis URL (free heroku redis dev addon)
-`PLAYER_ID` - Your Neptunes Pride player ID
-`GAME_ID` - Neptunes Pride game ID
-`AUTH` - Neptunes Pride auth cookie (aquired using Chrome's dev tools)
+* `PROWL_KEY` - Prowl app API key (paid for iOS app)
+* `REDIS_URL` - Redis URL (free heroku redis dev addon)
+* `PLAYER_ID` - Your Neptunes Pride player ID
+* `GAME_ID` - Neptunes Pride game ID
+* `AUTH` - Neptunes Pride auth cookie (aquired using Chrome's dev tools)
 
 ## Usage
 
