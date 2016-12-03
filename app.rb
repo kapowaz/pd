@@ -11,11 +11,12 @@ begin
   fleets = response.fleets.select { |f| f.player_id.to_s != ENV['PLAYER_ID'] }
 
   fleets.each do |fleet|
+
     next if fleet.orders.empty?
 
     order = fleet.orders.first
 
-    next if order.destination_star.player_id != ENV['PLAYER_ID']
+    next if order.destination_star.player_id.to_s != ENV['PLAYER_ID']
 
     attack = NP::Attack.new(
       player: fleet.player,
